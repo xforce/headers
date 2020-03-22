@@ -1,6 +1,6 @@
 [package]
 name = "headers"
-version = "0.3.5" # don't forget to update html_root_url
+version = "0.3.5"                                   # don't forget to update html_root_url
 description = "typed HTTP headers"
 license = "MIT"
 readme = "README.md"
@@ -11,10 +11,7 @@ keywords = ["http", "headers", "hyper", "hyperium"]
 categories = ["web-programming"]
 
 [workspace]
-members = [
-    "./",
-    "headers-core",
-]
+members = ["./", "headers-core"]
 
 [dependencies]
 http = "0.2.0"
@@ -22,6 +19,7 @@ headers-core = { version = "0.2", path = "./headers-core" }
 base64 = "0.13"
 bitflags = "1.0"
 bytes = "1"
+itertools = "0.9"
 mime = "0.3.14"
 sha-1 = "0.9"
 httpdate = "1"
